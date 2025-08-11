@@ -48,33 +48,8 @@ const db_name = process.env.db_name.
 
 E acrescentar o valor ${db_name} na string de conexão com o postgres: `postgres://${user}:${pass}@${host}:${db_port}/${db_name}`
 
+## Resultado
 
-# Levantamento de requisitos:
-
-PostgreSQl PostgreSQL 15.8 em Docker
-    postgres:15.8-bullseye
-    criar variaveis de ambiente local
-        TF_VAR_pg_user, TF_VAR_pg_db_name, TF_VAR_pg_pass, TF_VAR_db_port
-
-Terraform com provider docker
-
-Proxy reverse
-
-Variáveis de ambiente: user, pass, host e db_port
-${user}:${pass}@${host}:${db_port}`
-
-Nginx para servidor frontend
-
-Criar imagem docker para backend e frontend
-
-Variaveis para backend
-const port = Number(process.env.port);
-const user = process.env.pg_user
-const pass = process.env.pg_pass
-const host = process.env.pg_pass
+<img width="1919" height="704" alt="image" src="https://github.com/user-attachments/assets/9b02083d-ce5e-440b-8701-58d829c72b83" />
 
 
-ajustes:
-implementado ${db_name} na conexão com banco
-
-alterado if para if (req.url == "/api")

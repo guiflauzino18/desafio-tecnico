@@ -48,7 +48,6 @@ resource "docker_image" "backend_image" {
   build {
     context = "../backend"
     dockerfile = "/build/Dockerfile"
-    tag = ["backend-app:1.0.0"]
   }
 }
 
@@ -80,7 +79,6 @@ resource "docker_image" "frontend_image" {
   build {
     context = "../frontend/"
     dockerfile = "build/Dockerfile"
-    tag = ["frontend-app:1.0.0"]
   }
 }
 

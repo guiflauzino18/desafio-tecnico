@@ -26,7 +26,7 @@ export TF_VAR_pg_db_name=users <br>
 
 terraform init <br>
 terraform validate <br>
-terraform plan -var-file=variables.tfvars -out=plan.out <br>
+terraform plan -out=plan.out <br>
 terraform apply plan.out <br>
 
 #### Inserir dados no banco

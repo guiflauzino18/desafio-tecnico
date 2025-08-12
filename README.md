@@ -23,19 +23,20 @@ export TF_VAR_pg_pass=your_pg_pass <br>
 export TF_VAR_pg_db_name=users <br>
 
 #### Executar comandos
-
+Executar os comandos na pasta /terraform: <br>
 terraform init <br>
 terraform validate <br>
 terraform plan -out=plan.out <br>
 terraform apply plan.out <br>
 
 #### Inserir dados no banco
-Acessar o container do postgres e incluir os valores contidos script sql
+Inserir os valores contidos script sql.
 
 ## Acessar a Aplicação
-Criar um registro dns desafio.cubos.io apontando para o servidor onde está rodando os containers
-
+Criar um registro dns desafio.cubos.io apontando para o servidor onde está rodando os containers. Ex.: no linux adicionar o registro em /etc/hosts.
+<br>
 acessar no navegador http://desafio.cubos.io
+<br>
 
 ## Correções necessárias:
 No backend em index.js foi necessário recuperar os valores para as variáveis:

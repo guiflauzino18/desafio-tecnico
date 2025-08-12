@@ -19,9 +19,8 @@ sudo sh get-docker.sh
 Criar as variáveis de ambiente abaixo com seus respectivos valores: O sufixo TF_VAR_é importante para o terraform conseguir pegar seus valores.
 
 export TF_VAR_pg_user=your_user <br>
-export TF_VAR_pg_db_name=your_db_name <br>
 export TF_VAR_pg_pass=your_pg_pass <br>
-export TF_VAR_backend_port=your_3000 <br>
+export TF_VAR_pg_db_name <br>
 
 #### Executar comandos
 

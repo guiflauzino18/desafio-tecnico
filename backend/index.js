@@ -21,7 +21,6 @@ http.createServer(async (req, res) => {
     client.connect()
       .then(() => { successfulConnection = true })
       .catch(err => console.error('Database not connected -', err.stack))
-      .finally(() => client.end())
 
     res.setHeader("Content-Type", "application/json");
     res.writeHead(200);
@@ -34,15 +33,12 @@ http.createServer(async (req, res) => {
       console.error(error)
     }
 
-    console.log(result)
-
     const data = {
       database: successfulConnection,
       userAdmin: result?.role === "admin"
     }
 
     res.end(JSON.stringify(data));
-    await client.end()
   } else {
     res.writeHead(503);
     res.end("Internal Server Error");

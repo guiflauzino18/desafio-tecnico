@@ -20,7 +20,7 @@ Criar as variáveis de ambiente abaixo com seus respectivos valores: O sufixo TF
 
 export TF_VAR_pg_user=your_user <br>
 export TF_VAR_pg_pass=your_pg_pass <br>
-export TF_VAR_pg_db_name <br>
+export TF_VAR_pg_db_name=users <br>
 
 #### Executar comandos
 
@@ -48,7 +48,8 @@ const db_name = process.env.db_name.
 E acrescentar o valor ${db_name} na string de conexão com o postgres: `postgres://${user}:${pass}@${host}:${db_port}/${db_name}`
 
 ## Resultado
+<img width="1879" height="686" alt="image" src="https://github.com/user-attachments/assets/0c68819c-24ac-46f9-a9ac-a89a18e631af" />
 
-<img width="1919" height="704" alt="image" src="https://github.com/user-attachments/assets/9b02083d-ce5e-440b-8701-58d829c72b83" />
+
 
 

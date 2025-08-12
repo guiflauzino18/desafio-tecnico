@@ -9,10 +9,9 @@ echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/hashi
 sudo apt update && sudo apt install terraform
 
 ### Docker
-Para execução dos containers: <br>
+Para os containers: <br>
 curl -fsSL https://get.docker.com -o get-docker.sh
 sudo sh get-docker.sh
-
 
 ## Executando aplicação
 
@@ -48,9 +47,8 @@ const db_name = process.env.db_name.
 
 E acrescentar o valor ${db_name} na string de conexão com o postgres: `postgres://${user}:${pass}@${host}:${db_port}/${db_name}`
 
+## Notas
+Somente o container do proxy reverse está expondo a porta 80. Os demais serviços somente estão acessíveis de dentro da rede dos containers.
+
 ## Resultado
-<img width="1879" height="686" alt="image" src="https://github.com/user-attachments/assets/0c68819c-24ac-46f9-a9ac-a89a18e631af" />
-
-
-
-
+<img width="1879" height="686" alt="image" src="https://github.com/user-attachments/assets/0c68819c-24ac-46f9-a9ac-a89a18e631af" /> 
